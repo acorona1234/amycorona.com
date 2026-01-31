@@ -92,8 +92,8 @@ export default function Sandbox() {
           </div>
           
           <p className="text-center mt-4">
-            <a href="/" className="text-slate-500 hover:text-slate-400 text-sm">
-              ← Back to main site
+            <a href="/sandbox" className="text-slate-500 hover:text-slate-400 text-sm">
+              ← Back to Sandbox
             </a>
           </p>
         </div>
