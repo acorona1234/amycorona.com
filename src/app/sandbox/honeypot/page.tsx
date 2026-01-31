@@ -108,8 +108,8 @@ export default function Sandbox() {
       <header className="bg-slate-800 border-b border-slate-700">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <a href="/" className="text-slate-400 hover:text-white text-sm">
-              ← Main Site
+            <a href="/sandbox" className="text-slate-400 hover:text-white text-sm">
+              ← Back to Sandbox
             </a>
             <span className="text-slate-600">|</span>
             <h1 className="text-lg font-bold">🍯 Honeypot Labs</h1>
