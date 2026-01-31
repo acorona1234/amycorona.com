@@ -23,11 +23,12 @@ const projects = [
 ];
 
 const skills = [
+  "Data Analysis",
+  "Project Management",
   "Python",
   "R",
   "SQL",
   "Machine Learning",
-  "Statistics",
   "Data Visualization",
 ];
 
@@ -64,11 +65,60 @@ export default function Home() {
         <section className="py-8 sm:py-12 md:py-16 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
-              Data Scientist
+              Compensation Analyst
+              <span className="block text-2xl sm:text-3xl md:text-4xl text-slate-400 mt-1">&amp; Project Manager</span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 max-w-xl mx-auto">
-              Building predictive systems to enhance resource allocation and operational efficiency
+            <p className="text-base sm:text-lg text-slate-400 max-w-xl mx-auto mt-4">
+              Turning complex data into actionable insights that drive business decisions
             </p>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section className="py-8 sm:py-12 px-4 bg-slate-800/50">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-center">
+              {/* Photo */}
+              <div className="w-full lg:w-1/3 flex justify-center">
+                <div className="w-32 h-32 sm:w-48 sm:h-48 rounded-xl overflow-hidden">
+                  <Image
+                    src="/images/amy-squared-crop-l-768x768.jpg"
+                    alt="Amy Corona"
+                    width={768}
+                    height={768}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Bio */}
+              <div className="w-full lg:w-2/3 space-y-3 text-center lg:text-left">
+                <div>
+                  <h2 className="text-xl sm:text-2xl font-bold">Amy Corona</h2>
+                  <p className="text-indigo-400 text-sm font-medium">Data-Driven Problem Solver</p>
+                </div>
+                <div className="space-y-2 text-slate-300 text-sm leading-relaxed">
+                  <p>
+                    I'm a compensation analyst and project manager who turns complex data into clear, actionable insights. My background in data science gives me a unique perspective on solving business challenges through analytics.
+                  </p>
+                  <p>
+                    With expertise in Python, R, SQL, and machine learning, I bridge the gap between technical analysis and business strategy. I thrive on making data accessible and meaningful for diverse stakeholders.
+                  </p>
+                </div>
+
+                {/* Skills */}
+                <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 pt-2">
+                  {skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="bg-slate-700 px-2.5 py-1 rounded-full text-xs"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -76,7 +126,7 @@ export default function Home() {
         <section className="py-8 sm:py-12 px-4 border-t border-slate-800">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-center">
-              Featured Projects
+              Data Science Projects
             </h2>
 
             <div className="space-y-8 sm:space-y-12">
@@ -133,53 +183,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
-        <section className="py-8 sm:py-12 px-4 bg-slate-800/50">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-center">
-              {/* Photo */}
-              <div className="w-full lg:w-1/3 flex justify-center">
-                <div className="w-32 h-32 sm:w-48 sm:h-48 rounded-xl overflow-hidden">
-                  <Image
-                    src="/images/amy-squared-crop-l-768x768.jpg"
-                    alt="Amy Corona"
-                    width={768}
-                    height={768}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Bio */}
-              <div className="w-full lg:w-2/3 space-y-3 text-center lg:text-left">
-                <div>
-                  <h2 className="text-xl sm:text-2xl font-bold">Amy Corona</h2>
-                  <p className="text-indigo-400 text-sm font-medium">Data Scientist</p>
-                </div>
-                <div className="space-y-2 text-slate-300 text-sm leading-relaxed">
-                  <p>
-                    Data scientist specializing in predictive systems for resource allocation and operational efficiency. Passionate about sustainability and diversity & inclusion.
-                  </p>
-                  <p>
-                    Skilled in Python, R, SQL, machine learning, statistics, and data visualization. Experienced communicating complex insights to both technical teams and executives.
-                  </p>
-                </div>
-
-                {/* Skills */}
-                <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 pt-2">
-                  {skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="bg-slate-700 px-2.5 py-1 rounded-full text-xs"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}

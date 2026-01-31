@@ -8,32 +8,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amy Corona | Data Scientist",
+  title: "Amy Corona | Compensation Analyst & Project Manager",
   description:
-    "Data scientist specializing in predictive systems to enhance resource allocation and operational efficiency. Expert in Python, R, SQL, machine learning, and data visualization.",
+    "Compensation Analyst and Project Manager turning complex data into actionable insights. Expert in data analysis, Python, R, SQL, and machine learning.",
   keywords: [
-    "data scientist",
-    "machine learning",
+    "compensation analyst",
+    "project manager",
+    "data analyst",
     "Python",
     "R",
     "SQL",
-    "data analysis",
-    "predictive modeling",
+    "machine learning",
+    "data visualization",
   ],
   authors: [{ name: "Amy Corona" }],
   openGraph: {
-    title: "Amy Corona | Data Scientist",
+    title: "Amy Corona | Compensation Analyst & Project Manager",
     description:
-      "Data scientist specializing in predictive systems to enhance resource allocation and operational efficiency.",
+      "Turning complex data into actionable insights.",
     url: "https://amycorona.com",
     siteName: "Amy Corona",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amy Corona | Data Scientist",
+    title: "Amy Corona | Compensation Analyst & Project Manager",
     description:
-      "Data scientist specializing in predictive systems to enhance resource allocation and operational efficiency.",
+      "Turning complex data into actionable insights.",
   },
 };
 
