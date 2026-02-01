@@ -105,7 +105,7 @@ export default function HomeRemedies() {
                 onChange={(e) => setDescription(e.target.value)}
                 rows={2}
                 placeholder="e.g., Started yesterday, seems itchy, no fever..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-800 bg-white"
               />
             </div>
 
