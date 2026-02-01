@@ -132,7 +132,17 @@ export default function Sandbox() {
           </p>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {/* Placeholder app cards */}
+            {/* Email Classifier App */}
+            <a href="/sandbox/honeypot/apps/email-classifier" className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-indigo-500 transition-colors text-left group">
+              <div className="text-4xl mb-3">📧</div>
+              <h3 className="font-semibold mb-1 group-hover:text-indigo-400">Email Classifier</h3>
+              <p className="text-slate-400 text-sm">ML-powered email sorting with auto-labeling</p>
+              <span className="inline-block mt-3 text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded-full">
+                Active
+              </span>
+            </a>
+            
+            {/* Placeholder for new apps */}
             <div className="bg-slate-800 rounded-xl p-6 border-2 border-dashed border-slate-700 hover:border-indigo-500 transition-colors cursor-pointer">
               <div className="text-4xl mb-3">➕</div>
               <h3 className="font-semibold mb-1">New App</h3>
