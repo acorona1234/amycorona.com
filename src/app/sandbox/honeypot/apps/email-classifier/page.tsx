@@ -351,6 +351,16 @@ export default function EmailClassifier() {
                           </div>
                           
                           <button
+                            onClick={() => {
+                              applyLabelToAll(group.emails, "trash");
+                              blockSender(group.sender);
+                            }}
+                            className="text-slate-600 hover:text-orange-400 p-1"
+                            title="Unsubscribe (trash + block)"
+                          >
+                            📭
+                          </button>
+                          <button
                             onClick={() => blockSender(group.sender)}
                             className="text-slate-600 hover:text-red-400 p-1"
                             title="Block sender"
