@@ -174,6 +174,19 @@ export default function EmailClassifier() {
       const data = await res.json();
       if (data.link) {
         window.open(data.link, "_blank");
+        // Ask for confirmation after a delay
+        setTimeout(() => {
+          const worked = confirm("Did the unsubscribe page work?\n\nClick OK if you successfully unsubscribed.\nClick Cancel if it didn't work (I'll review it).");
+          if (!worked) {
+            // Save for review
+            fetch(`${API_BASE}/api/unsubscribe-failed`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email_id: emailId, sender, link: data.link }),
+            });
+            alert("Got it! I'll review this sender's unsubscribe link.");
+          }
+        }, 3000);
       } else {
         alert("No unsubscribe link found in this email. Try blocking instead.");
       }
