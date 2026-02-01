@@ -11,6 +11,7 @@ const LABELS = [
   { id: "!Amy", name: "!Amy", emoji: "⭐", color: "bg-yellow-500", desc: "Needs attention" },
   { id: "Receipts", name: "Receipts", emoji: "🧾", color: "bg-green-500", desc: "Tax records" },
   { id: "Newsletters", name: "Newsletters", emoji: "📰", color: "bg-purple-500", desc: "Weekly digest" },
+  { id: "Promotions", name: "Promos", emoji: "🏷️", color: "bg-pink-600", desc: "Deals & offers" },
   { id: "Archive", name: "Archive", emoji: "📦", color: "bg-amber-600", desc: "Archive for later" },
   { id: "Hidden", name: "Hidden", emoji: "👁️", color: "bg-slate-600", desc: "Archive silently" },
   { id: "Personal", name: "Personal", emoji: "💜", color: "bg-pink-500", desc: "Personal emails" },
