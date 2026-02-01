@@ -247,9 +247,9 @@ export default function EmailClassifier() {
       if (diffDays === 0) return "Today";
       if (diffDays === 1) return "Yesterday";
       if (diffDays < 7) return `${diffDays}d ago`;
-      if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
-      if (diffDays < 365) return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-      return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "2-digit" });
+      if (diffDays < 14) return `1w ago`;
+      if (diffDays < 365) return "2w+";
+      return "1yr+";
     } catch {
       return "";
     }
