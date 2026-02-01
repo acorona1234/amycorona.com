@@ -182,6 +182,20 @@ export default function EmailClassifier() {
     }
   };
 
+  const moveToReview = async (emailId: string) => {
+    try {
+      await fetch(`${API_BASE}/api/unreview`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email_id: emailId }),
+      });
+      setLabeledEmails(labeledEmails.filter((e) => e.id !== emailId));
+      fetchEmails(true);
+    } catch (err) {
+      setError("Failed to move back to review");
+    }
+  };
+
   useEffect(() => {
     fetchEmails(true);
     fetchLabeled();
@@ -477,7 +491,7 @@ export default function EmailClassifier() {
                       </div>
 
                       {/* Change label buttons */}
-                      <div className="flex gap-1 flex-wrap">
+                      <div className="flex gap-1 flex-wrap items-center">
                         {visibleLabels.map((label) => (
                           <button
                             key={label.id}
@@ -493,6 +507,13 @@ export default function EmailClassifier() {
                             {label.emoji}
                           </button>
                         ))}
+                        <button
+                          onClick={() => moveToReview(email.id)}
+                          className="h-8 px-2 rounded-lg bg-slate-700 hover:bg-indigo-600 text-xs text-slate-300"
+                          title="Move back to Needs Review"
+                        >
+                          ↩️ Review
+                        </button>
                       </div>
                     </div>
                   );
