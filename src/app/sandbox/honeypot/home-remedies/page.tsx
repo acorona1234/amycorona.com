@@ -9,7 +9,7 @@ export default function HomeRemedies() {
   const [results, setResults] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const API_URL = process.env.NEXT_PUBLIC_REMEDIES_API || 'http://pi4.local:5051';
+  const API_URL = process.env.NEXT_PUBLIC_REMEDIES_API || 'https://thousand-strap-advisors-pixels.trycloudflare.com';
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
