@@ -246,8 +246,12 @@ export default function EmailClassifier() {
     }
   });
 
-  // Sort by email count (most emails first)
-  senderGroups.sort((a, b) => b.emails.length - a.emails.length);
+  // Sort by most recent email date (newest first)
+  senderGroups.sort((a, b) => {
+    const dateA = new Date(a.emails[0]?.date || 0).getTime();
+    const dateB = new Date(b.emails[0]?.date || 0).getTime();
+    return dateB - dateA;
+  });
 
   const getLabelInfo = (id: string) => LABELS.find((l) => l.id === id) || LABELS[0];
 
