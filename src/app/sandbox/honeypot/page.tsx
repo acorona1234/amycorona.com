@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const HONEYPOT_USERNAME = "amy.m.corona@gmail.com";
-const HONEYPOT_PASSWORD = "letmein2026"; // Change this!
+const SANDBOX_USERNAME = "amy.m.corona@gmail.com";
+const SANDBOX_PASSWORD = "letmein2026"; // Change this!
 
 export default function Sandbox() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -14,7 +14,7 @@ export default function Sandbox() {
 
   useEffect(() => {
     // Check if already authenticated
-    const saved = localStorage.getItem("honeypot_auth");
+    const saved = localStorage.getItem("sandbox_auth");
     if (saved === "true") {
       setIsAuthenticated(true);
     }
@@ -23,8 +23,8 @@ export default function Sandbox() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === HONEYPOT_USERNAME && password === HONEYPOT_PASSWORD) {
-      localStorage.setItem("honeypot_auth", "true");
+    if (username === SANDBOX_USERNAME && password === SANDBOX_PASSWORD) {
+      localStorage.setItem("sandbox_auth", "true");
       setIsAuthenticated(true);
       setError("");
     } else {
@@ -34,7 +34,7 @@ export default function Sandbox() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("honeypot_auth");
+    localStorage.removeItem("sandbox_auth");
     setIsAuthenticated(false);
   };
 
