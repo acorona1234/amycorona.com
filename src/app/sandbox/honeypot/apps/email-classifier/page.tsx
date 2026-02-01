@@ -164,6 +164,24 @@ export default function EmailClassifier() {
     }
   };
 
+  const unsubscribe = async (emailId: string, sender: string) => {
+    try {
+      const res = await fetch(`${API_BASE}/api/unsubscribe`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email_id: emailId }),
+      });
+      const data = await res.json();
+      if (data.link) {
+        window.open(data.link, "_blank");
+      } else {
+        alert("No unsubscribe link found in this email. Try blocking instead.");
+      }
+    } catch (err) {
+      alert("Could not find unsubscribe link");
+    }
+  };
+
   useEffect(() => {
     fetchEmails(true);
     fetchLabeled();
@@ -351,12 +369,9 @@ export default function EmailClassifier() {
                           </div>
                           
                           <button
-                            onClick={() => {
-                              applyLabelToAll(group.emails, "trash");
-                              blockSender(group.sender);
-                            }}
+                            onClick={() => unsubscribe(group.emails[0].id, group.sender)}
                             className="text-slate-600 hover:text-orange-400 p-1"
-                            title="Unsubscribe (trash + block)"
+                            title="Find unsubscribe link"
                           >
                             📭
                           </button>
