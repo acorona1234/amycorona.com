@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const API_BASE = "https://api.amycorona.com";
+const API_BASE = "https://suite-experiment-three-parks.trycloudflare.com";
 
 // Real Gmail labels
 const LABELS = [
