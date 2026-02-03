@@ -3,6 +3,24 @@ import Link from "next/link";
 
 const projects = [
   {
+    category: "Machine Learning",
+    title: "Predicting Customer Churn",
+    description:
+      "Built a Random Forest classifier achieving 90% accuracy in predicting e-commerce customer churn. Analysis revealed that customer tenure explains 47% of churn, enabling proactive retention strategies.",
+    github:
+      "https://github.com/acorona1234/Predicting-Customer-Churn-in-an-Online-E-Commerce-Company-using-Random-Forest-Classifier",
+    image: "/images/customer-churn.png",
+  },
+  {
+    category: "Data Analysis",
+    title: "World Happiness Report Analysis",
+    description:
+      "Analyzed factors influencing happiness across 146 countries. Found that GDP per capita, social support, healthy life expectancy, and freedom to make life choices are the strongest predictors of national happiness.",
+    github:
+      "https://github.com/acorona1234/Analysis-of-Factors-Influencing-Happiness",
+    image: "/images/happiness-factors.png",
+  },
+  {
     category: "Data Analysis",
     title: "Helping Doctors Prescribe Medicine",
     description:
