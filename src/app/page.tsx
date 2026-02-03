@@ -6,7 +6,7 @@ const projects = [
     category: "Research Synthesis",
     title: "Evidence-Based Supplements for ASD, ADHD & OCD",
     description:
-      "Comprehensive analysis of peer-reviewed clinical trials and meta-analyses on nutritional interventions for neurodevelopmental conditions. Identified cross-condition synergies and developed a tiered protocol combining supplements strategically for enhanced benefits.",
+      "What if three simple supplements could help your kid's brain? When my son was diagnosed with ASD, I dove into the research. Hundreds of studies later, I found something surprising: Omega-3s, Zinc, and Magnesium help all three conditions: ASD, ADHD, and OCD. Even better, they work together. Omega-3s boost zinc absorption. Magnesium calms the nervous system at bedtime. Start with fish oil at breakfast and magnesium before bed. Two simple habits, real science behind them.",
     github:
       "https://github.com/acorona1234/supplement-research",
     image: "/images/supplements-venn-diagram.png",
