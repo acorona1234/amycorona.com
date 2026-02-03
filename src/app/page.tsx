@@ -3,6 +3,15 @@ import Link from "next/link";
 
 const projects = [
   {
+    category: "Research Synthesis",
+    title: "Evidence-Based Supplements for ASD, ADHD & OCD",
+    description:
+      "Comprehensive analysis of peer-reviewed clinical trials and meta-analyses on nutritional interventions for neurodevelopmental conditions. Identified cross-condition synergies and developed a tiered protocol combining supplements strategically for enhanced benefits.",
+    github:
+      "https://github.com/acorona1234/supplement-research",
+    image: "/images/supplements-venn-diagram.png",
+  },
+  {
     category: "Machine Learning",
     title: "Predicting Customer Churn",
     description:
