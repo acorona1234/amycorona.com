@@ -6,7 +6,7 @@ const projects = [
     category: "Machine Learning",
     title: "Predicting Customer Churn",
     description:
-      "Built a Random Forest classifier achieving 90% accuracy in predicting e-commerce customer churn. Analysis revealed that customer tenure explains 47% of churn, enabling proactive retention strategies.",
+      "Built a Random Forest classifier with 90% accuracy to predict e-commerce customer churn. Key insight: tenure is the #1 retention driver — long-term customers become loyal repeat buyers, revealing a clear opportunity for early engagement strategies.",
     github:
       "https://github.com/acorona1234/Predicting-Customer-Churn-in-an-Online-E-Commerce-Company-using-Random-Forest-Classifier",
     image: "/images/customer-churn.png",
