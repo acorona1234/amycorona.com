@@ -4,6 +4,15 @@ import Link from "next/link";
 const projects = [
   {
     category: "Research Synthesis",
+    title: "Vision Health: What Works vs. Marketing Hype",
+    description:
+      "Blue light glasses. Bilberry supplements. Eye vitamins. The wellness industry pushes them hard, but what does the research actually show? I dug through the clinical trials and found that many popular products lack evidence, while boring interventions (outdoor time for kids, screen breaks, proper lighting) have strong RCT support. The biggest surprise: low-dose atropine can slow childhood myopia progression by 50%. This guide separates fact from marketing.",
+    github:
+      "https://github.com/acorona1234/Vision-research-",
+    image: "/images/vision-health.png",
+  },
+  {
+    category: "Research Synthesis",
     title: "Evidence-Based Supplements for ASD, ADHD & OCD",
     description:
       "What if a few simple supplements could help your kid's brain? When my son was diagnosed with ASD, I dove into the research. Hundreds of studies later, I found surprising overlaps: Omega-3s help both ASD and ADHD. Zinc can cut ADHD medication needs by 37%. NAC reduces irritability in ASD and helps OCD. The key is knowing which ones actually have evidence. Start with fish oil at breakfast. Two capsules, real science behind them.",
