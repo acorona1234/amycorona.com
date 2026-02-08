@@ -15,7 +15,7 @@ const projects = [
     category: "Research Synthesis",
     title: "Evidence-Based Supplements for ASD, ADHD & OCD",
     description:
-      "What if a few simple supplements could help your kid's brain? When my son was diagnosed with ASD, I dove into the research. Hundreds of studies later, I found surprising overlaps: Omega-3s help both ASD and ADHD. Zinc can cut ADHD medication needs by 37%. NAC reduces irritability in ASD and helps OCD. The key is knowing which ones actually have evidence. Start with fish oil at breakfast. Two capsules, real science behind them.",
+      "What if a few simple supplements could help your kid's brain? When my son was diagnosed with ASD, I dove into the research. Hundreds of studies later, I found surprising overlaps: Omega-3s help both ASD and ADHD. Zinc can cut ADHD medication needs by 37%. NAC reduces irritability in ASD and helps OCD. L-Carnitine addresses the mitochondrial dysfunction found in 30-80% of ASD kids. The key is knowing which ones actually have evidence — and which are just marketing.",
     github:
       "https://github.com/acorona1234/supplement-research",
     image: "/images/supplements-venn-diagram.png",
